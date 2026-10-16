@@ -6,6 +6,7 @@ const songs = Array.from({ length: 18 }, (_, i) => ({
   songImage: `Images/${i + 1}.jpg`,
   songPath: `audio/${i + 1}.mp3`,
 }));
+//solved audio autoplay issue by adding preload metadata and catch error on play
 const cards = [...document.querySelectorAll(".music-card")];
 const audio = new Audio();
 audio.preload = "metadata";
