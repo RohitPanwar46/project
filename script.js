@@ -4,7 +4,7 @@ const songs = Array.from({ length: 18 }, (_, i) => ({
   songName: `Song ${i + 1}`,
   songDes: `Relax and enjoy song ${i + 1}`,
   songImage: `Images/${i + 1}.jpg`,
-  songPath: `Audio/${i + 1}.mp3`,
+  songPath: `audio/${i + 1}.mp3`,
 }));
 const cards = [...document.querySelectorAll(".music-card")];
 const audio = new Audio();
